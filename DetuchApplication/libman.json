@@ -1,0 +1,12 @@
+{
+  "defaultProvider": "cdnjs",
+  "version": "1.0",
+  "libraries": [
+    {
+      "library": "jquery@3.4.1",
+      "files": [ "jquery.min.js", "jquery.slim.min.js" ],
+      "destination": "wwwroot"
+    }
+  ]
+  
+}
