@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dutch Treat : @ViewBag.Tittle </title>
+    <link href="~/css/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <header></header>
+    <h1>Welcome To Dutch Treat</h1>
+    <menu>
+        <ul>
+            <li><a asp-controller="App" asp-action="Index">Home</a></li>
+            <li><a asp-controller="App" asp-action="Contact">Contact Us</a></li>
+            <li><a asp-controller="App" asp-action="About">About</a></li>
+        </ul>
+    </menu>
+    <section>
+        <h2> @ViewBag.Tittle </h2>
+        @RenderBody()
+    </section>
+    <footer>Copyright 2019 Deutch Treat LLC</footer>
+    <script src="~/jQuery/jquery.min.js"></script>
+    <script src="~/js/Index.js"></script>
+</body>
+</html>
