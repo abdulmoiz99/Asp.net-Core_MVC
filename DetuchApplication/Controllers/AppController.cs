@@ -25,6 +25,14 @@ namespace DetuchApplication.Controllers
         [HttpPost("Contact")]
         public IActionResult Contact(ContactViewModel model)
         {
+            if(ModelState.IsValid)
+            {
+                //send email
+            }
+            else
+            {
+                //show the errors
+            }
             return View();
         }
         public IActionResult About()
