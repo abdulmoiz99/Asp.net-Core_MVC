@@ -21,8 +21,15 @@ namespace DetuchApplication
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-           // app.UseDefaultFiles();
-            app.UseDeveloperExceptionPage();
+            // app.UseDefaultFiles();
+            if (env.IsDevelopment())
+            {
+                app.UseExceptionHandler("/error");
+            }
+            else
+            {
+                app.UseExceptionHandler();
+            }
             app.UseStaticFiles();
             app.UseMvc(cfg =>
             {
