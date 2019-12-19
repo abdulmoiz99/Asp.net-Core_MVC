@@ -19,7 +19,11 @@ namespace DetuchApplication.Controllers
         public IActionResult Contact()
         {
             ViewBag.Title = "Contact Us";
-            throw new InvalidOperationException("Bad Things Happens");
+            return View();
+        }
+        [HttpPost("Contact")]
+        public IActionResult Contact(object model)
+        {
             return View();
         }
         public IActionResult About()
