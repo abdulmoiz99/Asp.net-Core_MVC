@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DetuchApplication.ViewModels
 {
+    
     public class ContactViewModel
     {
         [Required]
