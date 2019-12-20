@@ -12,29 +12,33 @@
 
 
 }
-<form method="post">
-    <div asp-validation-summary="All"></div>
-    <label asp-for="Name">Your Name : </label>
-    <br />
-    <input asp-for="Name" />
-    <span asp-validation-for="Name"></span>
-    <br />
-    <label asp-for="Email">Email : </label>
-    <br />
-    <input type="email" asp-for="Email" />
-    <span asp-validation-for="Email"></span>
-    <br />
-    <label asp-for="Subject">Subject :</label>
-    <br />
-    <input asp-for="Subject" />
-    <span asp-validation-for="Subject"></span>
-    <br />
-    <label asp-for="Message">Message :</label>
-    <br />
-    <textarea cols="23" rows="5" asp-for="Message"></textarea>
-    <span asp-validation-for="Message"></span>
-    <br />
-    <br />
-    <input type="submit" value="Send Message" />
-    <br />
-</form>
+<div class="col-md-6 col-md-offset-3">
+    <div class="well">
+        <form method="post">
+            <div asp-validation-summary="All"></div>
+            <label asp-for="Name">Your Name : </label>
+            <br />
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+            <br />
+            <label asp-for="Email">Email : </label>
+            <br />
+            <input type="email" asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+            <br />
+            <label asp-for="Subject">Subject :</label>
+            <br />
+            <input asp-for="Subject" />
+            <span asp-validation-for="Subject"></span>
+            <br />
+            <label asp-for="Message">Message :</label>
+            <br />
+            <textarea cols="23" rows="5" asp-for="Message"></textarea>
+            <span asp-validation-for="Message"></span>
+            <br />
+            <br />
+            <input type="submit" value="Send Message" />
+            <br />
+        </form>
+    </div>
+</div>
