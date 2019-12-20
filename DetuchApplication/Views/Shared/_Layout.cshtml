@@ -8,26 +8,31 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <title>Dutch Treat : @ViewBag.Tittle </title>
     <link href="~/css/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <header></header>
-    <h1>Welcome To Dutch Treat</h1>
-    <menu>
-        <ul>
-            <li><a asp-controller="App" asp-action="Index">Home</a></li>
-            <li><a asp-controller="App" asp-action="Contact">Contact Us</a></li>
-            <li><a asp-controller="App" asp-action="About">About</a></li>
-        </ul>
-    </menu>
-    <section>
+    <header class="container">
+        <h1>Welcome To Dutch Treat</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                <li><a asp-controller="App" asp-action="Contact">Contact Us</a></li>
+                <li><a asp-controller="App" asp-action="About">About</a></li>
+            </ul>
+        </menu>
+    </header>
+    <section class="container">
         <h2> @ViewBag.Tittle </h2>
         @RenderBody()
     </section>
-    <footer>Copyright 2019 Deutch Treat LLC</footer>
+    <footer class="container">
+        <div>Copyright 2019 Deutch Treat LLC</div>
+    </footer>
     <script src="~/jQuery/jquery.min.js"></script>
+    <script href="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/js/Index.js"></script>
-    @RenderSection("scripts",false) 
+    @RenderSection("scripts", false)
 </body>
 </html>
